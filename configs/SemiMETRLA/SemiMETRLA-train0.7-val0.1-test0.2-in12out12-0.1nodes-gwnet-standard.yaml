@@ -1,0 +1,49 @@
+# optimizer
+epochs: 200
+batch_size: 512
+test_batch_size: 96
+loss_func: mse
+patience: 5
+minimum_epoch: 20
+# ST_pgd
+train_num_steps: 5
+train_step_size: 0.1
+train_epsilon: 0.5
+test_num_steps: 5
+test_step_size: 0.1
+test_epsilon: 0.5
+random: True
+train_attack_nodes: 0.1
+test_attack_nodes: 0.1
+dropout_type: none_dropout
+
+# log and save model
+log_interval: 1
+save_freq: 20
+
+# dataset
+dataset: SemiMETRLA
+num_timesteps: 12
+split_train: 0.7
+split_val: 0.8
+num_features: 1
+num_output_features: 1
+num_nodes: 207
+
+
+
+#model
+backbone: GWNET
+mode: TRAIN
+train_mode: plain
+distance: None
+rand_start_mode: None
+rand_start_step: None
+find_type: None
+model_dir: ./checkpoints/SemiMETRLA-train0.7-val0.1-test0.2-in12out12-0.1nodes-gwnet-standard
+resume_epoch: 0
+
+# test
+model_path: ./checkpoints/SemiMETRLA-train0.7-val0.1-test0.2-in12out12-0.1nodes-gwnet-standard/epoch.pt
+
+
