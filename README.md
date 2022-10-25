@@ -57,7 +57,10 @@ python grey_test.py configs/BlackPeMS/BlackMETRLA-train0.7-val0.1-test0.2-numste
 ```
 Here `-a ALL` ,`-a grey-attack`, and `-a black-attack` denote that we evaluate attacks including STPGD-TNDS, STMIM-TNDS, PGD-Random, PGD-PR, PGD-Centrality, PGD-Degree, MIM-Random, MIM-PR, MIM-Centrality, MIM-Degree .
 
-
+## Environment
+```
+conda env create -f pytorch.yaml
+```
 ## License and Citation
 If you find our code or paper useful, please cite our paper:
 ```bibtex
