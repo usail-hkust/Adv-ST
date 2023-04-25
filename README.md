@@ -64,13 +64,17 @@ conda env create -f pytorch.yaml
 ## License and Citation
 If you find our code or paper useful, please cite our paper:
 ```bibtex
-@inproceedings{fan2022ASTFA,
- author =  {Fan LIU, Hao LIU, Wenzhao JIANG},
- title = {Practical Adversarial Attacks on Spatiotemporal
-Traffic Forecasting Models},
- booktitle = {In Proceedings of the Thirty-sixth Annual Conference on Neural Information Processing Systems (NeurIPS)},
+@inproceedings{fliupractical2022,
+ author = {LIU, Fan and Liu, Hao and Jiang, Wenzhao},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+ pages = {19035--19047},
+ publisher = {Curran Associates, Inc.},
+ title = {Practical Adversarial Attacks on Spatiotemporal Traffic Forecasting Models},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/79081c95482707d2db390542614e29cd-Paper-Conference.pdf},
+ volume = {35},
  year = {2022}
- }
+}
 ```
 ## Acknowledgement
 We thank the authors for the following repositories for code reference:
